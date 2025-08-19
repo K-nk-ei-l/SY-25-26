@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3 uid="uid://dwx4rvh7s2ehm"]
+
+[ext_resource type="Script" uid="uid://55bexob4ht1r" path="res://character_body_2d.gd" id="1_feb5d"]
+[ext_resource type="Script" uid="uid://cbjtra1k4kedc" path="res://game.gd" id="1_ryrav"]
+[ext_resource type="Texture2D" uid="uid://bqqn6b07diyqc" path="res://Corvette22.png" id="2_fc0e3"]
+[ext_resource type="Script" uid="uid://cgls3xr7afqas" path="res://road.gd" id="3_fc0e3"]
+[ext_resource type="Texture2D" uid="uid://dk058db1h8v7d" path="res://road3lanefic.png" id="3_feb5d"]
+[ext_resource type="PackedScene" uid="uid://bv383cdr0ahxq" path="res://dialouge_box.tscn" id="6_eow3j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ryrav"]
+size = Vector2(66, 138)
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_ryrav")
+
+[node name="Obstacles" type="Node2D" parent="."]
+
+[node name="Timer" type="Timer" parent="Obstacles"]
+
+[node name="Car" type="CharacterBody2D" parent="."]
+script = ExtResource("1_feb5d")
+
+[node name="Corvette22" type="Sprite2D" parent="Car"]
+z_index = 2
+scale = Vector2(0.666667, 0.658621)
+texture = ExtResource("2_fc0e3")
+
+[node name="Collision" type="CollisionShape2D" parent="Car"]
+shape = SubResource("RectangleShape2D_ryrav")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -203)
+
+[node name="Road" type="Node2D" parent="."]
+position = Vector2(436.102, -213.59)
+script = ExtResource("3_fc0e3")
+
+[node name="RoadSprite1" type="Sprite2D" parent="Road"]
+position = Vector2(-431.102, 211.59)
+scale = Vector2(1.01132, 0.884459)
+texture = ExtResource("3_feb5d")
+
+[node name="RoadSprite2" type="Sprite2D" parent="Road"]
+position = Vector2(-431.102, -444.41)
+scale = Vector2(1.01132, 0.884459)
+texture = ExtResource("3_feb5d")
+
+[node name="DialogueBox" parent="." instance=ExtResource("6_eow3j")]
