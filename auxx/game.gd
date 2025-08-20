@@ -4,12 +4,12 @@ func _ready():
 	var dialogue = [
 		{
 			"name": "Alice",
-			"text": "We finally made it to the city!",
+			"text": "This is a test text box!",
 			"sprite": preload("res://download (1).jpg")
 		},
 		{
 			"name": "Bob",
-			"text": "Yes... but something feels off here.",
+			"text": "A test box if you will! Heh.",
 			"sprite": preload("res://download.jpg")
 		}
 	]

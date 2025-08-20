@@ -17,32 +17,39 @@ offset_left = 148.0
 offset_top = 489.0
 offset_right = 1004.0
 offset_bottom = 627.0
+scale = Vector2(1, 1.48)
 
 [node name="DialogueLabel" type="Label" parent="Panel"]
+custom_minimum_size = Vector2(800, 75)
 layout_mode = 0
-offset_left = 19.0
-offset_top = 45.0
-offset_right = 59.0
-offset_bottom = 68.0
-scale = Vector2(20.3973, 3.89591)
+offset_left = 23.0
+offset_top = 54.0541
+offset_right = 823.0
+offset_bottom = 129.054
+theme_override_font_sizes/font_size = 25
+autowrap_mode = 3
 
 [node name="NameLabel" type="Label" parent="Panel"]
+custom_minimum_size = Vector2(800, 60)
 layout_mode = 0
-offset_left = 29.0
-offset_top = 8.0
-offset_right = 635.0
-offset_bottom = 44.0
-uppercase = true
+offset_left = 20.0
+offset_top = 1.35135
+offset_right = 820.0
+offset_bottom = 61.3514
+theme_override_font_sizes/font_size = 40
 
 [node name="CharacterSprite" type="TextureRect" parent="Panel"]
+custom_minimum_size = Vector2(128, 128)
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.018
-anchor_top = -0.138
+anchor_left = -0.187
+anchor_top = -0.653
 anchor_right = -0.018
-anchor_bottom = -0.138
-offset_left = 0.408001
-offset_top = 0.0440025
-offset_right = 0.408001
-offset_bottom = 0.0440025
+anchor_bottom = -0.073
+offset_left = -84.928
+offset_top = -87.5888
+offset_right = -101.592
+offset_bottom = -39.6288
+scale = Vector2(1.99283, 2.49352)
+expand_mode = 1
 stretch_mode = 5

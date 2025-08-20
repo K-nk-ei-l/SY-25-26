@@ -46,3 +46,8 @@ scale = Vector2(1.01132, 0.884459)
 texture = ExtResource("3_feb5d")
 
 [node name="DialogueBox" parent="." instance=ExtResource("6_eow3j")]
+offset_left = -489.0
+offset_top = -586.0
+offset_right = -489.0
+offset_bottom = -586.0
+typing_speed = 0.02
